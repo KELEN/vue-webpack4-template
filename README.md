@@ -1,6 +1,6 @@
-# vue-webpack4脚手架
+# vue-webpack4 h5项目脚手架
 
-> vue-webpack4脚手架
+> vue-webpack4 h5项目脚手架 自己定制版本
 
 
 
@@ -13,6 +13,18 @@ vue2 webpack4 axios vue-router
 使用淘宝的flexible.js自适应
 
 > 750px为标准 => 120px 对应的写法为 px2rem(120)
+
+### eventBus
+
+组件内部使用 
+
+```javascript
+
+this.$eventBus.$on('userChange', (user) => { console.log(user) });
+
+this.$eventBus.$emit('userChange', user)
+
+```
 
 ### 启动应用
 
