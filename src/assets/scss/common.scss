@@ -1,0 +1,225 @@
+@import '_reset.scss';
+
+body {
+  font-size: 16px !important;
+  margin: 0;
+  padding: 0;
+  font-family: PingFang SC -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+.share-container {
+  overflow: hidden;
+}
+
+.share-fixed-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  .share-img {
+    width: 100%;
+  }
+}
+
+.share-img-download-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.loading-box{
+  z-index:999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #F47A20;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+}
+
+.share-logo {
+  width: px2rem(276);
+  margin: px2rem(60) auto;
+  display: block;
+}
+
+.share-detail {
+  background-color: #F5F6F7;
+  border: .5px solid #D8D8D8;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(75, 75, 75, 0.15);
+  border-radius: 6px;
+  width: px2rem(668);
+  padding: 0 px2rem(64);
+  margin: 0 auto;
+}
+
+.share-detail__title {
+  font-family: PingFang SC;
+  line-height: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #F47A20;
+  margin-top: px2rem(40);
+  font-weight: bolder;
+}
+
+.share-detail__img {
+  height: px2rem(290);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: px2rem(40) auto 0;
+  border-radius: 6px;
+}
+
+.share-intro {
+  margin: px2rem(30) 0;
+}
+
+.share-intro-row {
+  margin-bottom: px2rem(10);
+}
+
+.share-intro__l {
+  font-size: 13px;
+  float: left;
+  font-weight: 600;
+}
+
+.share-intro__r {
+  float: right;
+  font-weight: 600;
+  .share-intro__r__money {
+    color: #F47A20;
+    font-size: 14px;
+  }
+  .share-intro__r__money-unit {
+    font-size: 12px;
+  }
+}
+
+.share-intro__house-info {
+  font-size: 12px;
+  color: #999;
+}
+
+.share-help {
+  font-size: 12px;
+  padding: 0 px2rem(80);
+  margin: px2rem(50) 0;
+  color: #999;
+  line-height: 18px;
+}
+
+.share-qrcode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 px2rem(120);
+  margin: px2rem(50) 0;
+  div {
+    margin: px2rem(10);
+  }
+}
+
+.share-qrcode__img {
+  width: px2rem(183);
+  height: px2rem(183);
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}
+
+.share-qrcode__txt {
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.share-intro__item {
+  font-size: 12px;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  padding: px2rem(28);
+  span {
+    width: px2rem(30);
+    display: inline-block;
+  }
+  .share-intro__item-label {
+    width: px2rem(80);
+    text-align: center;
+    margin-right: px2rem(30);
+    color: #999999;
+  }
+  .share-intro__item-txt {
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.share-money {
+  color: #F47A20;
+  font-weight: bolder;
+}
