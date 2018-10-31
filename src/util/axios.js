@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-// const API_URL = 'http://us.service.1zrent.com:15080/';
-
 window.axios = axios;
 const API_URL = process.env.BASE_URL
 

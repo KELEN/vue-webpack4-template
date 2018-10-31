@@ -8,21 +8,21 @@ let buildEnv = {
 
 if (lifeCycleEvnet === 'build:test') {
     buildEnv = {
-        BASE_URL: "'http://47.100.6.239:15080'",
+        BASE_URL: "'test.server.com'",
         NODE_ENV: '"production"'
     }
 }
 
 if (lifeCycleEvnet === 'build:us') {
     buildEnv = {
-        BASE_URL: "'http://us.service.1zrent.com:15080/'",
+        BASE_URL: "'cn.server.com'",
         NODE_ENV: '"production"'
     }
 }
 
 if (lifeCycleEvnet === 'build:cn') {
     buildEnv = {
-        BASE_URL: "'http://cn.service.1zrent.com:15080/'",
+        BASE_URL: "'en.server.com'",
         NODE_ENV: '"production"'
     }
 }

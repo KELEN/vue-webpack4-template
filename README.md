@@ -1,19 +1,18 @@
-# 易租屋H5
+# vue-webpack4脚手架
 
-> 易租屋H5
+> vue-webpack4脚手架
 
 
 
 ### 所用技术：
 
-vue2（技术选型框架）
+vue2 webpack4 axios vue-router 
 
-axios（请求服务器）
+### 自适应 
 
-vue-router（路由）
+使用淘宝的flexible.js自适应
 
-vuejs自定义组件、自定义过滤器、mixin、工具类
-
+> 750px为标准 => 120px 对应的写法为 px2rem(120)
 
 ### 启动应用
 
@@ -35,18 +34,3 @@ npm run build:cn
 构建en环境
 npm run build:en
 ```
-
-### 请求url
-
-获取房源分享图片 /houseShare?houseId=2&userId=21
-
-获取租赁分享图片 /rentingShare?houseId=2&userId=21
-
-获取室友分享图片 /roommateShare?houseId=2&userId=21
-
-
-### 服务器地址
-
-国外正式服地址： http://us.service.1zrent.com
-
-国内正式服地址： http://cn.service.1zrent.com
